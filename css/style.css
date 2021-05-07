@@ -1,0 +1,1847 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+ul,ol{
+
+    list-style: none;
+}
+
+
+a,a:hover,a:focus{
+
+    text-decoration: none;
+}
+
+html,body{
+
+    overflow-x: hidden;
+}
+
+
+h1,h2,h3,h4,h5,h6,p{
+
+    margin: 0;
+    padding: 0;
+}
+
+/* html,body{
+
+    scroll-behavior: smooth;
+} */
+
+
+
+
+
+
+.title h1{
+
+    color: #222222;
+    font-size: 35px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+.title p{
+
+    color: #222222;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    width: 500px !important;
+    margin-left: 410px !important;
+    margin-bottom: 50px;
+    
+
+}
+
+
+/* .one{
+
+    height: 300px;
+    width: 300px;
+    background: red;
+    animation: myani 4s infinite;
+} */
+
+
+
+/* @keyframes myani {
+
+    0%{
+        margin-left: 100px;
+        background: red;
+    }
+
+    10%{
+        margin-left: 100px;
+        background: green;
+    }
+
+    20%{
+        margin-left: 200px;
+        margin-top: 100px;
+        background: rgba(65, 13, 13, 0.295);
+    }
+
+    59%{
+        background: rgb(216, 152, 152);
+        margin-left: 10px;
+        margin-top: 30px;
+    }
+
+    100%{
+        margin-left: 50px;
+        margin-top: 50px;
+        background: rgb(100, 153, 100);
+    } */
+    
+    /* from{
+        background: red;
+        margin-left: 0;
+    }
+
+    to{
+
+        background: green;
+        margin-left: 200px;
+    } */
+
+
+
+
+/* ====================================================
+                    navbar css start
+======================================================= */
+
+nav{
+   
+    background: transparent;
+     border-bottom: 2px solid rgba(251, 170, 51,.2);
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    z-index: 1;
+    transition: 4s;
+    animation: navani 50s;
+}
+
+
+/* @keyframes navani {
+    
+    from{
+        margin-left: -100%;
+        background: red;
+    }
+
+    to{
+        margin-left: 0;
+        background: transparent;
+    }
+} */
+
+
+nav button i{
+
+    color: #fff;
+}
+
+
+nav ul li a{
+
+    font-size: 16px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    transition: .4s;
+    position: relative;
+}
+
+
+nav ul li a:hover{
+    color: #fbaa33;
+}
+
+
+nav ul li{
+    margin-left: 25px;
+}
+
+
+
+nav ul li a:after{
+    position: absolute;
+    bottom: -21px;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background: #fbaa33;
+    content: "";
+    transition: .4s;
+}
+
+
+
+nav ul li a:hover:after{
+    width: 100%;
+}
+
+
+
+.sticky{
+
+    position: fixed !important;
+    width: 100%;
+    background: #000;
+    z-index: 1;
+}
+
+
+/* ====================================================
+                    navbar css end
+======================================================= */
+
+
+
+
+
+
+
+
+/* =====================================================
+                banner css start
+========================================================= */
+#banner-part{
+    position: relative;
+}
+
+#banner-part .banner{
+    
+    background: url(../images/banner.png)no-repeat center;
+    background-size: cover;
+    text-align: center;
+    height: 500px;
+    width: 100%;
+}
+
+
+#banner-part .overlay{
+    text-align: center;
+    padding-top: 245px;
+    padding-bottom: 182px;
+    height: 100%;
+    width: 100%;
+   background: rgba(0, 0, 0,.5);
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+
+
+#banner-part h4{
+    margin-top: -120px;
+    font-size: 36px;
+    font-family: 'Raleway', sans-serif;;
+    color: white;
+
+}
+
+
+#banner-part h3{
+
+    font-size: 55px;
+    font-family: 'Raleway', sans-serif;;
+    color: #fbaa33;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+
+
+#banner-part  p{
+
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    width: 557px;
+    margin-left: 300px;
+    margin-bottom: 25px;
+    
+}
+
+
+
+#banner-part  a{
+
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+    display: inline-block;
+    padding: 10px 20px;
+    transition: .4s;
+    border-radius: 3px;
+    margin-left: 15px;
+    transition: .4s;
+}
+
+
+
+#banner-part a:hover{
+    background: #fbaa33;
+    border: 1px solid #fbaa33;
+    color: #222222;
+}
+
+
+.prev{
+    height: 30px;
+    width: 30px;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    z-index: 1;
+    background: #fff;
+    border-radius: 50%;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    transition: .4s;
+}
+
+
+.prev:hover{
+
+    background: #fbaa33;
+}
+
+
+
+
+.next{
+    height: 30px;
+    width: 30px;
+    color: black;
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    z-index: 1;
+    background: #fff;
+    border-radius: 50%;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    transition: .4s;
+}
+
+
+.next:hover{
+    background: #fbaa33;
+}
+
+
+
+
+
+
+/* =====================================================
+                banner css end
+========================================================= */
+
+
+
+
+
+
+
+/* =====================================================
+                banner-shape css start
+========================================================= */
+
+#banner-shape .shape{
+
+    width: 100%;
+    height: 300px;
+    background: rgb(114, 17, 17);
+}
+
+
+
+#banner-shape .shape {
+
+    width: 100%;
+    height: 500px;
+    background: white;
+    transform: skew(-84deg);
+    transform-origin: left bottom;
+    position: absolute;
+    top: 5px;
+   
+}
+
+
+/* =====================================================
+                banner-shape css end
+========================================================= */
+
+
+
+
+
+
+/* =====================================================
+               about css start
+========================================================= */
+
+
+#about-part .img{
+
+    height: 350px;
+    width: 350px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 350px;
+    margin: 30px 0;
+    overflow: hidden;
+}
+
+
+
+
+#about-part .img img{
+
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+
+}
+
+
+
+#about-part .item{
+
+    width: 100%;
+    padding: 30px;
+    background: #eeeeee;
+    text-align: center;
+    position: relative;
+}
+
+
+#about-part .item h3{
+
+    font-size: 18px;
+    font-family:  'Raleway', sans-serif;
+    margin-bottom: 30px;
+}
+
+#about-part .item p{
+    width: 314px;
+    margin: 0 auto;
+    font-size: 14px;
+    font-family:   'Open Sans', sans-serif;
+    color: #656565; 
+}
+
+
+#about-part .two p{
+
+    margin-left: -25px;
+}
+
+
+#about-part .item #triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-left: 15px solid  #eeeeee;
+    border-bottom: 15px solid transparent;
+    position: absolute;
+    color: #eeeeee;
+    right: 0;
+    top: 50%;
+    margin-right: -12px;
+    transform: translateY(-50%);
+  }
+
+
+
+  
+  #about-part .item #triangle-left {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-right: 20px solid  #eeeeee;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    color: #eeeeee;
+    left: 0;
+    top: 50%;
+    margin-left: -12px;
+    transform: translateY(-50%);
+  }
+
+
+
+
+  #about-part .item #triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid#eeeeee;
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   margin-top: 23px;
+    color: #eeeeee;
+   
+  }
+
+
+  #about-part .item #triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid  #eeeeee;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: -13px;
+     color: #eeeeee;
+  }
+
+
+  #about-part .item .top{
+    /* z-index: 2; */
+    position: absolute;
+    bottom: -39px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+
+
+  #about-part .item .left{
+    /* z-index: 2; */
+    position: absolute;
+    right: -37px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+
+
+  #about-part .item .right{
+    /* z-index: 2; */
+    position: absolute;
+    left: -37px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+
+  #about-part .item .bottom{
+    /* z-index: 2; */
+    position: absolute;
+    top: -39px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+
+  #about-part .item i{
+
+    transition: .4s;
+  }
+
+
+  #about-part .item i:hover{
+
+    color: #fbaa33;
+  }
+
+
+
+  #about-part .img2{
+
+      display: none;
+  }
+
+
+  #about-part .img3{
+      
+    display: none;
+}
+
+
+#about-part .img4{
+      
+    display: none;
+}
+
+
+
+/* =====================================================
+               about css end
+========================================================= */
+
+
+
+
+
+
+
+/* =====================================================
+                portfolio css start
+========================================================= */
+
+#portfolio-part{
+
+    margin-top: 100px;
+    background: url(../images/bc.png)no-repeat,center;
+    background-size: cover;
+}
+
+
+#portfolio-part .overlay{
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0,.7);
+    padding: 100px 0;
+}
+
+
+#portfolio-part .overlay .title h1{
+
+    color: white;
+}
+
+#portfolio-part .overlay .title p{
+    color: white;
+    margin-bottom: 50px;
+    margin: 0 auto;
+}
+
+
+#portfolio-part .overlay .img{
+
+    margin: 30px 0;
+    position: relative;
+
+
+}
+
+#portfolio-part .overlay .img img{
+
+    width: 100%;
+}
+
+
+#portfolio-part .overlay .img .overlay{
+
+    height: 0%;
+    width: 100%;
+    background: rgba(0, 0, 0,.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    opacity: 0;
+    transition: .4s;
+}
+
+
+#portfolio-part .overlay .img:hover .overlay{
+
+    height: 100%;
+    opacity: 1;
+
+}
+
+
+#portfolio-part .overlay .img .img1{
+    position: relative;
+}
+
+
+#portfolio-part .overlay .img .overlay i{
+    font-size: 50px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+
+/* =====================================================
+                portfolio css end
+========================================================= */
+
+
+
+
+
+
+
+
+
+
+/* =====================================================
+               service css start
+========================================================= */
+
+#service-part .title{
+
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+
+#service-part .restitle{
+
+    display: none;
+}
+
+
+#service-part .line{
+
+    background: url(../images/line2.png) center;
+    background-repeat: no-repeat;
+    height: 780px;
+    position: absolute;
+    width: 2px;
+    top: 576px;
+    left: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+#service-part .item{
+
+    width: 100%;
+    height: 200px;
+    margin: 30px 0;
+    display: flex;
+
+}
+
+
+#service-part .item .left{
+
+    height: 200px;
+    width: 45%;
+    float: none !important;
+    position: relative;
+
+}
+
+
+
+#service-part .item .left h5{
+
+    position: absolute;
+    top: 45%;
+    right: 0;
+    transform: translateX(-45%);
+}
+
+
+
+#service-part .item .middle{
+
+    height: 200px;
+    width: 10%;
+    position: relative;
+
+}
+
+#service-part .item .middle .img{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 70px;
+    width: 70px;
+    background: #eeeeee;
+    border-radius: 50%;
+    position: relative;
+}
+
+
+#service-part .item .middle .img img{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+
+
+#service-part .item .right{
+
+    height: 200px;
+    width: 45%;
+    z-index: 2;
+    position: relative;
+}
+
+
+#service-part .item .right .text{
+
+    position: absolute;
+    top: -18px;
+    right: -40px;
+    position: relative;
+}
+
+
+#service-part .item .right .text .triangle-left {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-right: 20px solid #f1f1f1;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    top: 50%;
+    left: -16px;
+    transform: translateY(-50%);
+  }
+
+
+
+
+
+#service-part .item .right .text p{
+
+    width: 446px;
+    padding: 39px 38px;
+    background: #f1f1f1;
+   
+}
+
+
+
+#service-part .item2{
+
+    width: 100%;
+    height: 200px;
+    margin: 30px 0;
+    display: flex;
+
+}
+
+
+
+#service-part .item2 .left{
+
+    height: 200px;
+    width: 45%;
+    position: relative;
+}
+
+
+
+#service-part .item2 .left .text{
+
+    position: absolute;
+    top: -15px;
+   
+}
+
+
+
+#service-part .item2 .left .text .triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-left: 20px solid #f1f1f1;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    top: 50%;
+    right: -18px;
+    transform: translateY(-50%);
+}
+
+
+#service-part .item2 .left .text p{
+
+    width: 446px;
+    padding: 38px 38px;
+    text-align: right;
+    background: #f1f1f1;
+   
+}
+
+
+
+#service-part .item2 .middle{
+
+    height: 200px;
+    width: 10%;
+    position: relative;
+
+}
+
+
+
+#service-part .item2 .middle .img{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+#service-part .item2 .middle .img{
+
+    height: 70px;
+    width: 70px;
+    background: #eeeeee;
+    border-radius: 50%;
+    position: relative;
+   
+}
+
+
+
+
+
+
+#service-part .item2 .middle .img img{
+
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+
+
+
+
+#service-part .item2 .right{
+
+    height: 200px;
+    width: 45%;
+    position: relative;
+}
+
+
+#service-part .item2 .right .des{
+
+    position: absolute;
+    top: 45%;
+    left: 113px;
+    transform: translateX(-45%);
+}
+
+
+#service-part{
+
+    position: relative;
+}
+
+.upp{
+
+   font-size: 20px;
+   color:#000;
+   height: 40px;
+   width: 40px;
+   border: 1px solid #000;
+   border-radius: 50%;
+   text-align: center;
+   line-height: 40px;
+   background: transparent;
+   position: absolute;
+   left: 50%;
+   top: -60px;
+   transform: translate(-50%);
+   transition: .4s;
+
+}
+
+
+.upp:hover{
+
+    background: #fbaa33;
+    border: 1px solid #fbaa33;
+}
+
+
+
+
+
+.dow{
+
+    font-size: 20px;
+    color:#000;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    background: transparent;
+    position: absolute;
+    left: 50%;
+    bottom: -30px;
+    transform: translate(-50%);
+    transition: .4s;
+
+
+}
+
+
+.dow:hover{
+
+    background: #fbaa33;
+    border: 1px solid #fbaa33;
+}
+
+
+
+
+
+
+#service-part .slick-active .middle .img{
+
+    background: red;
+
+}
+
+#service-part .item .middle .img{
+
+    background: #eeeeee !important;
+
+}
+
+
+
+
+#service-part .item span{
+
+    display: none;
+}
+
+
+#service-part .item2 span{
+
+    display: none;
+}
+
+
+/* =====================================================
+               service css end
+========================================================= */
+
+
+
+
+
+
+
+/* =====================================================
+               testi css start
+========================================================= */
+
+#testi-part{
+
+    background: url(../images/testi-img.png)no-repeat center;
+    background-size: cover;
+    height: 845px;
+    width: 100%;
+    margin-top: 80px;
+    position: relative;
+
+}
+
+
+
+
+
+#testi-part .overlay{
+
+    padding-top: 185px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0,.7);
+
+}
+
+#testi-part .overlay .testi-slider{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#testi-part .overlay .testi-slider .left{
+
+    width: 20%;
+
+}
+
+#testi-part .overlay .testi-slider .left .item{
+
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#testi-part .overlay .testi-slider .left .item .img{
+
+    height: 100px;
+    width: 100px;
+    background: #fec600;
+    margin-top: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    transition: .4s;
+}
+
+
+#testi-part .overlay .testi-slider .left .item .img .overlay{
+
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0,.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+#testi-part .overlay .testi-slider .left .item .img img{
+
+    margin-top: 20px;
+    width: 100%;
+}
+
+
+
+#testi-part .slick-current .img{
+
+    transform: scale(1.4);
+}
+
+
+#testi-part .slick-current .img .overlay{
+
+    background: rgba(0, 0, 0, 0) !important;
+}
+
+
+#testi-part .overlay{
+
+    position: relative;
+}
+
+
+
+#testi-part .lw img{
+     height: 630px;
+     position: absolute;
+     top: -74px;
+     left: 309px;
+     margin-top: 184px;
+     transform: translateX(-50%);
+
+    
+}
+
+
+
+.uu{
+
+    font-size: 20px;
+    color:#fff;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    background: transparent;
+    position: absolute;
+    left: 50%;
+    top: -115px;
+    transform: translate(-50%);
+    transition: .4s;
+ 
+ }
+ 
+ 
+ .uu:hover{
+ 
+     background: #fbaa33;
+     border: 1px solid #fbaa33;
+ }
+ 
+ 
+ 
+ 
+ 
+ .dd{
+ 
+     font-size: 20px;
+     color:#fff;
+     height: 40px;
+     width: 40px;
+     border: 1px solid #fff;
+     border-radius: 50%;
+     text-align: center;
+     line-height: 40px;
+     background: transparent;
+     position: absolute;
+     left: 50%;
+     bottom: -141px;
+     transform: translate(-50%);
+     transition: .4s;
+ 
+ 
+ }
+ 
+ 
+ .dd:hover{
+ 
+     background: #fbaa33;
+     border: 1px solid #fbaa33;
+ }
+
+
+
+
+
+
+#testi-part .overlay .testi-slider .right{
+
+    width: 70%;
+    background: #f1f1f1;
+    padding: 58px 30px;
+    align-self: center;
+   
+}
+
+
+#testi-part .overlay{
+
+    position: relative;
+}
+
+
+#testi-part .overlay  .triangle-left {
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-right: 25px solid #f1f1f1;
+    border-bottom: 25px solid transparent;
+    position: absolute;
+    top: 47%;
+    left: 597px;
+    border-top-left-radius: 20px;
+    
+  }
+
+
+#testi-part .right h3{
+
+    font-size: 20px;
+    color: #222222;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+
+#testi-part .right .icon i{
+
+    color: #fec600;
+
+}
+
+
+#testi-part .right h4{
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    margin-bottom: 27px;
+}
+
+
+#testi-part .right p{
+    margin-bottom: 27px;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    color: #222222;
+
+}
+
+#testi-part .right .text  img{
+
+    margin-left: 78%;
+}
+
+
+#testi-part .te{
+
+    height: 130px;
+    width: 130px;
+    background: #f1f1f1;
+    border-radius: 12%;
+    position: absolute;
+    top: 43%;
+    left: 35.5% !important;
+    transform: translate(-50%,-50%);
+    transform: rotate(45deg);
+}
+
+
+
+
+
+#testi-part .line-two{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+               testi css end
+========================================================= */
+
+
+
+
+
+
+
+
+/* =====================================================
+               price css start
+========================================================= */
+
+#price-part .title{
+
+    margin-top: 100px;
+}
+
+#price-part .item{
+    background: #f1f1f1;
+}
+
+
+#price-part .item .top{
+
+    background: #353535;
+    color: #fff;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 100px;
+    clip-path: polygon(0 0, 100% 0, 100% 71%, 0% 100%);
+    transition: .4s;
+}
+
+
+#price-part .item:hover .top{
+
+    background: #fec600;
+
+}
+
+
+#price-part .item .top p{
+
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    transition: .4s;
+}
+
+
+
+#price-part .item:hover .top p{
+
+    color: #353535;
+}
+
+
+
+#price-part .item .middle{
+    background: #f1f1f1;
+    text-align: center;
+}
+
+
+
+
+
+#price-part .item .middle ul li{
+
+    margin-top: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+
+
+#price-part .item .bottom{
+   padding: 50px 0;
+    background: #353535;
+    text-align: center;
+    clip-path: polygon(0 33%, 100% 0, 100% 100%, 0% 100%);
+    transition: .4s;
+}
+
+
+
+
+
+#price-part .item .bottom a{
+
+    color: white;
+}
+
+#price-part .item:hover .bottom{
+
+    background: #fec600;
+
+}
+
+
+#price-part .item .bottom a{
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;;
+    transition: .4s;
+}
+
+
+
+#price-part .item:hover .bottom a{
+
+    color: #353535;
+}
+
+
+
+#price-part .item .middle{
+
+    position: relative;
+}
+
+
+#price-part .item .middle .round{
+
+    height: 100px;
+    width: 100px;
+    border: 2px solid #353535;
+    border-radius: 50%;
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #f1f1f1;
+    transition: .4s;
+    
+
+}
+
+#price-part .item:hover .middle .round{
+
+    border: 2px solid #fec600;
+
+
+}
+
+#price-part .item .middle .round2{
+
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+   margin: 4px;
+    background: #353535;
+    transition: .4s;
+    
+
+}
+
+
+#price-part .item:hover .middle .round2{
+
+    background: #fec600;
+    
+}
+
+
+
+
+#price-part .item .middle .round2 h2{
+
+    font-size: 29px;
+    font-family: 'Raleway', sans-serif;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    color: #fff;
+    transition: .4s;
+
+}
+
+
+#price-part .item:hover .middle .round2 h2{
+
+    color: #353535;
+
+}
+
+
+#price-part .item .middle .round2 h4{
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    transition: .4s;
+    
+}
+
+
+#price-part .item:hover .middle .round2 h4{
+
+    color: #353535;
+}
+
+
+/* #price-part .item .middle .round2{
+
+    position: relative;
+}
+
+
+#price-part .item .middle .round2 .dig{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+} */
+
+
+
+
+/* =====================================================
+               price css end
+========================================================= */
+
+
+
+
+
+
+
+/* =====================================================
+               counter css start
+========================================================= */
+
+#counter-part{
+    margin-bottom: 40px;
+    margin-top: 100px;
+    background: #000;
+    color: #fff;
+    padding: 50px 0;
+    transform: skewY(-3deg);
+
+}
+
+#counter-part .box{
+
+    text-align: center;
+    border: 1px solid #fff;
+    padding: 20px 0;
+}
+
+
+#counter-part .box .text{
+
+    transform: skewY(4deg);
+}
+
+
+
+/* =====================================================
+               counter css end
+========================================================= */
+
+
+
+
+
+
+/* =====================================================
+               image css start
+========================================================= */
+
+#image-part{
+
+    margin-top: 300px;
+    padding: 40px 0;
+    width: 100%;
+    background: #f1f1f1;
+    transform: skewY(-3deg);
+}
+
+
+#image-part .row .image{
+
+    padding: 30px 9px;
+    border: 1px solid #cdcdcd;
+    
+}
+
+
+#image-part .row .im{
+
+    transform: skewY(3deg);
+}
+
+
+
+
+
+/* =====================================================
+               image css end
+========================================================= */
+
+
+
+
+
+
+
+/* =====================================================
+               footer top css start
+========================================================= */
+
+#footer-part{
+
+    background: #000;
+   text-align: center;
+   padding: 40px 0;
+   border-bottom: 3px solid #353535;
+   transform: skewY(-3deg);
+}
+
+
+#footer-part .image{
+
+    transform: skewY(3deg);
+}
+
+
+
+/* =====================================================
+               footer top css end
+========================================================= */
+
+
+
+
+
+
+/* =====================================================
+               footer bottom css start
+========================================================= */
+
+.btop{
+    padding: 10px;
+    background: darkgreen;
+    color: #fff;
+  display: inline-block;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none;
+  z-index: 9999;
+}
+
+#footer-bottom{
+
+    padding-top: 200px;
+    background: #000;
+    height: 500px;
+    margin-top: -120px;
+}
+
+
+#footer-bottom .one{
+    position: relative;
+    height: 300px;
+
+}
+
+
+#footer-bottom .one .icon{
+
+    margin-left: -81px;
+    text-align: center;
+}
+
+#footer-bottom .one .icon i{
+
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    background: #fec600;
+    line-height: 36px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+
+#footer-bottom .one p{
+
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    margin-left: -6px;
+    width: 187px;
+    text-align: center;
+}
+
+
+#footer-bottom .one .dot{
+
+    width: 3px;
+    height: 95px;
+    background: #555555;
+   position: absolute;
+   top: 0;
+   right: 0;
+
+}
+
+
+#footer-bottom .one .two{
+
+    margin-left: 15px;
+}
+
+
+#footer-bottom .one .two .icon{
+
+    margin-left: auto;
+    
+}
+
+
+#footer-bottom .one .two p{
+
+    width: 248px;
+    margin-left: 2px;
+    
+}
+
+
+#footer-bottom .one .two .dot{
+
+    margin-right: -30px;
+}
+
+
+
+
+
+#footer-bottom h2{
+    margin-top: -130px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 29px;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+#footer-bottom .fficon{
+
+    margin-top: 25px;
+    text-align: center; 
+}
+
+#footer-bottom .fficon i{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background: white;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 50%;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+
+
+
+
+/* =====================================================
+               footer bottom css end
+========================================================= */
+
+
+
+
+
+
+/* =====================================================
+               final part start
+========================================================= */
+
+#final-part p{
+    color: white;
+    font-size: 13px;
+    background: #353535;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#final-part p span{
+
+    color: #fec600;
+}
+
+
+/* =====================================================
+               final part end
+========================================================= */
